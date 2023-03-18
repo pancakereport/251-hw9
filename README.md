@@ -7,6 +7,7 @@ In this homework we demonstrate that training using two GPUs was faster than tra
 To reproduce for DDP, update the `URL` variable to the correct address and copy `imagenet_ddp.ipynb` into a second container. Everything can stay the same but update `RANK` to be `1`.
 
 Useful commands: 
+\
 `docker run --rm -v ~/data:/data --net=host --gpus=all -ti nvcr.io/nvidia/pytorch:23.02-py3 bash` to create a container 
 \
 `jupyter lab --ip=0.0.0.0 --allow-root` to open jupyter lab within a container
